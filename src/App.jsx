@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Navbar from './components/Navbar'
 
 const App = () => {
+   
+     const [theme, settheme] = useState('light')
+
   return (
-    <div>Hello</div>
+    <div className='dark:bg-black'>
+      <Navbar  theme={theme} settheme={settheme} />
+    </div>
   )
 }
 
